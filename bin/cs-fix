@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+vendor/bin/phpcbf --colors -p -s --report-width=120 --extensions=php --standard=EveronCodingStandard ${1-src}

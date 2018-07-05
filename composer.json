@@ -1,0 +1,49 @@
+{
+    "name": "everon/development",
+    "authors": [
+        {
+            "name": "Oliwier Ptak"
+        }
+    ],
+    "description": "Everon Coding Standards",
+    "require": {
+        "squizlabs/php_codesniffer": "^3.2",
+        "slevomat/coding-standard": "^4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Everon\\": "coding-standard"
+        }
+    },
+    "pre-install-cmd": [
+        "chmod +x bin/*"
+    ],
+    "pre-update-cmd": [
+        "chmod +x bin/*"
+    ],
+    "post-install-cmd": [
+        "@cs-setup"
+    ],
+    "post-update-cmd": [
+        "@cs-setup"
+    ],
+    "scripts": {
+        "cs-list": "phpcs -e --standard=coding-standard/Everon/ruleset.xml",
+        "cs-setup" : "phpcs --config-set installed_paths coding-standard/Everon/,vendor/slevomat/coding-standard/SlevomatCodingStandard/",
+        "cs-check": "phpcs -s --colors -p --report-width=120 --extensions=php --standard=Everon ${1-src}",
+        "cs-fix": "phpcbf -s --colors -p --report-width=120 --extensions=php --standard=Everon ${1-src}",
+        "test": "phpunit"
+    },
+    "scripts-descriptions": {
+        "cs-list": "Show coding standard rules",
+        "cs-setup": "Executes once to setup coding standard rules",
+        "cs-check": "Checks and reports coding style violations",
+        "cs-fix": "Fixes coding style violations automatically"
+    },
+    "bin": [
+        "bin/cs-list",
+        "bin/cs-setup",
+        "bin/cs-check",
+        "bin/cs-fix"
+    ]
+}
