@@ -22,7 +22,7 @@ Project's configuration example.
     <rule ref="Everon.Files.TypeNameMatchesFileName">
         <properties>
             <property name="rootNamespaces" type="array"
-                      value="src/Popo=>Popo,tests/Popo=>Tests\Popo"/>
+                      value="src/App=>App,tests/App=>Tests\App"/>
             <property name="ignoredNamespaces" type="array"
                       value="Tests\App\Generated"/>
             <property name="extensions" type="array"
