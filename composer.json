@@ -1,5 +1,6 @@
 {
     "name": "everon/coding-standard",
+    "license": "MIT",
     "authors": [
         {
             "name": "Oliwier Ptak"
