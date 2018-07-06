@@ -15,7 +15,7 @@ Project's configuration example.
 
 ```
 <?xml version="1.0"?>
-<ruleset name="EveronCodingStandard">
+<ruleset name="Everon">
     <exclude-pattern>*/tests/App/*</exclude-pattern>
 
     <rule ref="Everon"/>

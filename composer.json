@@ -29,8 +29,8 @@
         "@cs-setup"
     ],
     "scripts": {
-        "cs-list": "phpcs -e --standard=coding-standard/Everon/ruleset.xml",
-        "cs-setup" : "phpcs --config-set installed_paths coding-standard/Everon/,vendor/slevomat/coding-standard/SlevomatCodingStandard/",
+        "cs-list": "phpcs -e --standard=coding-standard/EveronCodingStandard/ruleset.xml",
+        "cs-setup" : "phpcs --config-set installed_paths coding-standard/EveronCodingStandard/,vendor/everon/development/coding-standard/Everon/,vendor/slevomat/coding-standard/SlevomatCodingStandard/",
         "cs-check": "phpcs -s --colors -p --report-width=120 --extensions=php --standard=Everon ${1-src}",
         "cs-fix": "phpcbf -s --colors -p --report-width=120 --extensions=php --standard=Everon ${1-src}",
         "test": "phpunit"
