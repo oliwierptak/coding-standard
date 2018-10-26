@@ -23,8 +23,8 @@ Project's configuration example.
         <properties>
             <property name="rootNamespaces" type="array"
                       value="src/App=>App,tests/App=>Tests\App"/>
-            <property name="ignoredNamespaces" type="array"
-                      value="Tests\App\Generated"/>
+            <property name="skipDirs" type="array"
+                      value="tests/App/Generated"/>
             <property name="extensions" type="array"
                       value="php"/>
         </properties>
