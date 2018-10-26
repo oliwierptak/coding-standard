@@ -121,7 +121,7 @@ class TypeNameMatchesFileNameSniff implements \PHP_CodeSniffer\Sniffs\Sniff
     protected function shouldSkip(string $directory): bool
     {
         foreach ($this->skipDirs as $skipDir) {
-            if (StringHelper::startsWith($directory, $skipDir)) {
+            if (StringHelper::startsWith($skipDir, $directory)) {
                 return true;
             }
         }
