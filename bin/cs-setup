@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-vendor/bin/phpcs --config-set installed_paths coding-standard/EveronCodingStandard/,vendor/everon/coding-standard/coding-standard/Everon/,vendor/slevomat/coding-standard/SlevomatCodingStandard/
+vendor/bin/phpcs --config-set installed_paths coding-standard/Everon/,vendor/everon/coding-standard/coding-standard/Everon/,vendor/slevomat/coding-standard/SlevomatCodingStandard/

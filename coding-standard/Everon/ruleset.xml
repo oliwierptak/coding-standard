@@ -44,48 +44,12 @@
 
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
-        <properties>
-            <property name="usefulAnnotations" type="array" value="@Api,@Route,@Template,@Cache,@Method,@ParamConverter,@Security,@Exception,@throws"/>
-        </properties>
-    </rule>
-
-    <!--<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName">
-        <type>warning</type>
-        <severity phpcbf-only="true">0</severity>
-    </exclude>-->
-
-    <!--    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
-        <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.UselessDocComment">
-            <type>warning</type>
-            <severity phpcbf-only="true">0</severity>
-        </rule>-->
-
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableReturnTypeHintSpecification">
-        <type>warning</type>
-        <severity>0</severity>
-    </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableParameterTypeHintSpecification">
-        <type>warning</type>
-        <severity>0</severity>
-    </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversablePropertyTypeHintSpecification">
-        <type>warning</type>
-        <severity>0</severity>
-    </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
             <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
             <property name="newlinesCountAfterDeclare" value="2"/>
             <property name="spacesCountAroundEqualsSign" value="1"/>
-        </properties>
-    </rule>
-
-    <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
-        <properties>
-            <property name="linesCountAfterOpeningBrace" value="0"/>
-            <property name="linesCountBeforeClosingBrace" value="0"/>
         </properties>
     </rule>
 
@@ -118,7 +82,6 @@
     <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
 
     <rule ref="PSR2" />
     <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
