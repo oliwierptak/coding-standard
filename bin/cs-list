@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-vendor/bin/phpcs -e --standard=coding-standard/Everon/ruleset.xml
+vendor/bin/phpcs -e --standard=Everon
