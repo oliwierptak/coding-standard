@@ -1,5 +1,5 @@
 ## Coding Standards
-Over 100 sniffs with additional checks and code analysis (eg. detecting unreachable code, unused variables, etc).
+Over 200 sniffs with additional checks and code analysis (eg. detecting unreachable code, unused variables, etc).
 
 The rule set is located in `coding-standard/Everon/ruleset.xml`.
 
