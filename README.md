@@ -9,14 +9,16 @@ Installation with composer.
 `composer require everon/coding-standard --dev`
 
 ### Configuration
-After installation create your own rule set under `<project dir>coding-standard/EveronCodingStandard/ruleset.xml`.
+After installation create your own rule set under `<project dir>phpcs.xml`.
 
 Project's configuration example.
 
 ```
 <?xml version="1.0"?>
 <ruleset name="Everon">
+
     <exclude-pattern>*/tests/App/*</exclude-pattern>
+    <exclude-pattern>*/tests/logs/*</exclude-pattern>
 
     <rule ref="Everon"/>
     <rule ref="Everon.Files.TypeNameMatchesFileName">
