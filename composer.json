@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Everon\\": "coding-standard"
+            "Everon\\": "coding-standard\\Everon"
         }
     },
     "scripts": {
